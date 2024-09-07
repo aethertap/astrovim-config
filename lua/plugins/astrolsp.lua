@@ -50,7 +50,8 @@ return {
         ["rust-analyzer"] = {
             cargo = {
               features = {"nvim_analyzer"},
-              --overrideCommand = {"cargo" ,"clippy","--message-format=json", "--all-targets", "--all-features"}
+              profile = {"rust-analyzer"},
+              --override_command = {"cargo" ,"check","--message-format=json", "--all-targets", "--all-features", "--profile=rust-analyzer"}
             }
           }
         }
