@@ -60,6 +60,7 @@ return {
           desc = "Close buffer from tabline",
         },
 
+        ["<Leader>fg"] = { function() require("telescope.builtin").git_files() end, desc = "Find git files" },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         -- ["<Leader>b"] = { desc = "Buffers" },
